@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:orientation="vertical"
+    android:id="@+id/rl_titlebar"
+    android:background="@color/white">
+
+        <TextView
+            android:id="@+id/title_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="88dp"
+            android:layout_marginLeft="88dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@color/comman_title"
+            android:textSize="18sp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+            android:id="@+id/title_back"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:padding="10dp"
+            android:src="@drawable/back" />
+        <ImageView
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+            android:id="@+id/title_exit"
+            android:layout_width="45dp"
+            android:visibility="gone"
+            android:layout_toRightOf="@id/title_back"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:padding="10dp"
+            android:src="@drawable/img_exi" />
+        <ImageView
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+            android:id="@+id/title_Right"
+            android:visibility="gone"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:padding="10dp" />
+        <TextView
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+            android:id="@+id/title_Right_tx"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/title_R"
+            android:clickable="true"
+            android:padding="10dp" />
+</RelativeLayout>

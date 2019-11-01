@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:paddingTop="17dp"
+    android:paddingLeft="7dp"
+    android:paddingRight="7dp"
+    android:paddingBottom="17dp"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/cb_collect"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="12dp"
+        android:layout_gravity="center"
+        android:layout_width="22dp"
+        android:src="@drawable/withdraw_default"
+        android:button="@null"
+        android:layout_height="22dp" />
+    <FrameLayout
+        android:layout_marginLeft="7dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.huiminsheng.app.views.MyImagView
+            android:id="@+id/imgv_zscx_logo"
+            android:scaleType="centerInside"
+            android:layout_width="130dp"
+            android:layout_height="90dp" />
+        <TextView
+            android:id="@+id/tv_zscx_tag"
+            android:background="@drawable/list_tag_z"
+            android:textSize="@dimen/home_zscx_tag"
+            android:gravity="center"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:layout_width="60dp"
+            android:layout_height="20dp" />
+    </FrameLayout>
+    <LinearLayout
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="3dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp">
+            <TextView
+                android:id="@+id/tv_zscx_name"
+                android:textSize="14sp"
+                android:maxLines="1"
+                android:gravity="start"
+                android:layout_gravity="start"
+                android:textColor="@color/font_h"
+                android:layout_width="wrap_content"
+                android:ellipsize="end"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/tv_zscx_desc"
+                android:textSize="@dimen/home_zscx_desc"
+                android:maxLines="1"
+                android:textColor="@color/font_more"
+                android:ellipsize="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" >
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="¥"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:textColor="@color/font_zscx_jg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="4dp"
+                android:id="@+id/tv_zscx_jg"
+                android:textColor="@color/font_zscx_jg"
+                android:textSize="17sp"
+                android:maxLines="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="4dp"
+                android:id="@+id/tv_zscx_zdj"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/font_more"
+                android:textSize="11sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <!--预付-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:background="@drawable/bc_home_zscx_yf"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="15dp">
+            <ImageView
+                android:id="@+id/lv_zscx_sz"
+                android:layout_width="11dp"
+                android:src="@mipmap/index_clock"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitCenter"
+                android:layout_height="11dp" />
+            <TextView
+                android:id="@+id/tv_zxcx_yf"
+                android:textSize="11sp"
+                android:layout_marginLeft="5dp"
+                android:ellipsize="end"
+                android:layout_gravity="center_vertical"
+                android:maxLines="1"
+                android:textColor="@color/font_zscx_yf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

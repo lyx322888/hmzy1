@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/comman_title"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:background="@drawable/contact_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" />
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginRight="23dp"
+                    android:id="@+id/layout_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="343dp"
+                    app:cardUseCompatPadding="true"
+                    app:cardCornerRadius="5dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardElevation="3dp">
+                    <LinearLayout
+                        android:background="@drawable/around_conner_border"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="22dp"
+                        android:layout_marginRight="22dp"
+                        android:layout_height="343dp">
+
+                        <ImageView
+                            android:layout_marginTop="21dp"
+                            android:layout_gravity="center"
+                            android:background="@mipmap/ic_hmzy"
+                            android:layout_width="62dp"
+                            android:layout_height="62dp" />
+
+                        <TextView
+                            android:id="@+id/tv_zx"
+                            android:layout_marginTop="15dp"
+                            android:layout_gravity="center"
+                            android:text="关注微信公众号，了解更多惠民资讯！"
+                            android:textColor="#ff333333"
+                            android:textSize="15sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ImageView
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/iv_officialaccount"
+                            android:layout_gravity="center"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp" />
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:text="（长按可保存图片）"
+                            android:textColor="#ff2b3542"
+                            android:textSize="13sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </FrameLayout>
+            <RelativeLayout
+                android:layout_marginTop="21dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_sm"
+                        android:layout_gravity="center"
+                        android:text="扫码加客服微信，及时解决您的需求！"
+                        android:textColor="#ff333333"
+                        android:textSize="15sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/iv_wechatcode"
+                        android:layout_marginTop="15dp"
+                        android:layout_gravity="center"
+                        android:layout_width="118dp"
+                        android:layout_height="118dp" />
+                    <TextView
+                        android:layout_marginTop="15dp"
+                        android:layout_gravity="center"
+                        android:text="（长按可保存图片）"
+                        android:textColor="#ff2b3542"
+                        android:textSize="13sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

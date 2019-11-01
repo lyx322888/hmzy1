@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:paddingTop="17dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:foreground="?android:attr/selectableItemBackgroundBorderless"
+    android:paddingBottom="17dp"
+    android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_marginRight="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tv_title"
+                            android:textColor="@color/phb_font"
+                            android:textSize="14sp"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:layout_centerVertical="true"
+                            android:layout_width="match_parent"
+                            android:layout_marginRight="100dp"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/tv_money"
+                            android:textColor="@color/theme"
+                            android:textSize="14sp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <TextView
+                    android:layout_marginTop="9dp"
+                    android:id="@+id/tv_time"
+                    android:layout_marginRight="19dp"
+                    android:gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textSize="13sp"
+                    android:textColor="@color/font_msg_a3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+        </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--导航栏字体大小-->
+    <dimen name="navigationbar_text">9sp</dimen>
+    <!--小标题后面的更多-->
+    <dimen name="title_right_more">12sp</dimen>
+    <!--首页小标题-->
+    <dimen name="home_title">17dp</dimen>
+    <dimen name="home_kjl_text">12sp</dimen>
+    <!--常规-->
+    <dimen name="normal">14sp</dimen>
+    <!--在售车型 描述文字-->
+    <dimen name="home_zscx_desc">12sp</dimen>
+    <!--在售车型 tag文字-->
+    <dimen name="home_zscx_tag">11sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

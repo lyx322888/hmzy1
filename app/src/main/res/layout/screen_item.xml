@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="start|center_vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.huiminsheng.app.views.RoundedTextview
+        android:layout_width="match_parent"
+        android:textSize="14sp"
+        android:id="@+id/rtv_code"
+        android:layout_margin="7dp"
+        android:gravity="center"
+        android:layout_height="35dp">
+    </com.huiminsheng.app.views.RoundedTextview>
+</LinearLayout>

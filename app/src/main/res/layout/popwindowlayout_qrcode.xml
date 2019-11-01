@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/around_conner_border"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="330dp">
+            <LinearLayout
+                android:background="@drawable/code_bc"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+                <TextView
+                    android:layout_marginBottom="7dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="扫码加客服微信，及时解决你的需求！"
+                    android:layout_gravity="bottom"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/lv_code"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:layout_width="160dp"
+                android:layout_height="160dp" />
+            <TextView
+                android:layout_marginTop="17dp"
+                android:layout_gravity="center"
+                android:text="（长按可保存图片）"
+                android:textSize="14sp"
+                android:textColor="@color/font_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="52dp"
+            android:layout_gravity="center_horizontal"
+            android:padding="2dp"
+            android:background="@drawable/bc_code_bc"
+            android:layout_height="52dp">
+            <com.huiminsheng.app.views.MyImagView_yuan
+                android:layout_gravity="center"
+                android:src="@drawable/service_img"
+                android:scaleType="fitXY"
+                android:layout_width="49dp"
+                android:layout_height="49dp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/lv_qx"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="@dimen/dp_40"
+        android:layout_gravity="center_horizontal|bottom"
+        android:src="@drawable/service_btn"
+        android:layout_width="38dp"
+        android:layout_height="38dp" />
+</LinearLayout>

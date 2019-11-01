@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:layout_marginBottom="7dp"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp">
+        <ImageView
+            android:id="@+id/lv"
+            android:layout_centerVertical="true"
+            android:src="@drawable/confirm_store"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+        <TextView
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@id/lv"
+            android:id="@+id/tv_dm"
+            android:text="惠民庄园"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/phb_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/theme"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/tv_transaction_status"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_myorder_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+        <TextView
+            android:id="@+id/tv_sum"
+            android:textColor="@color/font_h"
+            android:textSize="13sp"
+            android:gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/tv_total_prices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_total_prices"
+            android:textColor="@color/font_h"
+            android:textSize="14sp"
+            android:gravity="bottom"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_gravity="right"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:visibility="gone"
+            android:background="@drawable/myorder_scdd"
+            android:id="@+id/tv_scdd"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:text="删除订单"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/font_order"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:visibility="gone"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/myorder_bc"
+            android:id="@+id/tv_zf"
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:text="去支付"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

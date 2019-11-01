@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".activity.my.SettingActivity">
+    <include layout="@layout/comman_title"/>
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--头像模块-->
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--头像-->
+                <RelativeLayout
+                    android:id="@+id/rl_tx"
+                    style="@style/settingLm"
+                    android:layout_height="65dp">
+                    <TextView
+                        android:text="头像"
+                        style="@style/settingL" />
+                    <com.huiminsheng.app.views.MyImagView_yuan
+                        android:id="@+id/lv_tx"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/lv_tx_back"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp" />
+                    <ImageView
+                        android:visibility="invisible"
+                        android:id="@+id/lv_tx_back"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        style="@style/settingBack" />
+                </RelativeLayout>
+                <View
+                    style="@style/settingfgx"/>
+                <!--昵称-->
+                <RelativeLayout
+                    android:id="@+id/rl_nc"
+                    style="@style/settingLm">
+                    <TextView
+                        android:text="昵称"
+                        style="@style/settingL" />
+                    <TextView
+                        android:layout_toLeftOf="@id/lv_nc_back"
+                        android:id="@+id/tv_nc"
+                        style="@style/settingR"/>
+                    <ImageView
+                        android:visibility="invisible"
+                        android:id="@+id/lv_nc_back"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        style="@style/settingBack" />
+                </RelativeLayout>
+                <View
+                    style="@style/settingfgx"/>
+                <!--微信二维码-->
+                <RelativeLayout
+                    android:id="@+id/rl_wxewm"
+                    style="@style/settingLm">
+                    <TextView
+                        android:text="微信二维码"
+                        style="@style/settingL" />
+                    <TextView
+                        android:layout_toLeftOf="@id/lv_ewm_back"
+                        android:id="@+id/tv_wx_ewm"
+                        style="@style/settingR"/>
+                    <ImageView
+                        android:id="@+id/lv_ewm_back"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        style="@style/settingBack" />
+                </RelativeLayout>
+                <View
+                    style="@style/settingfgx"/>
+                <!--我的支付宝-->
+                <RelativeLayout
+                    android:id="@+id/rl_zfb"
+                    style="@style/settingLm">
+                    <TextView
+                        android:text="我的支付宝"
+                        style="@style/settingL" />
+                    <TextView
+                        android:layout_toLeftOf="@id/lv_zfb_back"
+                        android:id="@+id/tv_zfb"
+                        style="@style/settingR"/>
+                    <ImageView
+                        android:id="@+id/lv_zfb_back"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        style="@style/settingBack" />
+                </RelativeLayout>
+                <View
+                    style="@style/settingfgx"/>
+                <!--我的银行卡-->
+                <RelativeLayout
+                    android:id="@+id/rl_yhk"
+                    style="@style/settingLm">
+                    <TextView
+                        android:text="我的银行卡"
+                        style="@style/settingL" />
+                    <TextView
+                        android:layout_toLeftOf="@id/lv_yhk_back"
+                        android:id="@+id/tv_yhk"
+                        style="@style/settingR"/>
+                    <ImageView
+                        android:id="@+id/lv_yhk_back"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        style="@style/settingBack" />
+                </RelativeLayout>
+                <View
+                    style="@style/settingfgx"/>
+                <!--手机号-->
+                <RelativeLayout
+                    android:id="@+id/rl_sjh"
+                    style="@style/settingLm">
+                    <TextView
+                        android:text="手机号"
+                        style="@style/settingL" />
+                    <TextView
+                        android:layout_toLeftOf="@id/lv_phone_back"
+                        android:id="@+id/tv_phone"
+                        style="@style/settingR"/>
+                    <ImageView
+                        android:id="@+id/lv_phone_back"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        style="@style/settingBack" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!--密码-->
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--修改登录密码-->
+                <RelativeLayout
+                    android:id="@+id/rl_xgdlmm"
+                    style="@style/settingLm">
+                    <TextView
+                        android:text="修改登录密码"
+                        style="@style/settingL" />
+                    <ImageView
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        style="@style/settingBack" />
+                </RelativeLayout>
+                <View
+                    style="@style/settingfgx"/>
+                <!--修改交易密码-->
+                <RelativeLayout
+                    android:id="@+id/rl_xgjymm"
+                    style="@style/settingLm">
+                    <TextView
+                        android:id="@+id/tv_xgjymm"
+                        android:text="修改交易密码"
+                        style="@style/settingL" />
+                    <ImageView
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        style="@style/settingBack" />
+                </RelativeLayout>
+                <View
+                    style="@style/settingfgx"/>
+                <!--忘记交易密码-->
+                <RelativeLayout
+                    android:id="@+id/rl_wjjymm"
+                    style="@style/settingLm">
+
+                    <TextView
+                        style="@style/settingL"
+                        android:text="忘记交易密码" />
+
+                    <ImageView
+                        style="@style/settingBack"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!--缓存-->
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/rl_qchc"
+                    style="@style/settingLm">
+                    <TextView
+                        android:text="清楚缓存"
+                        style="@style/settingL" />
+                    <TextView
+                        android:layout_toLeftOf="@id/lv_hc_back"
+                        android:id="@+id/tv_hc"
+                        style="@style/settingR"/>
+                    <ImageView
+                        android:id="@+id/lv_hc_back"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        style="@style/settingBack" />
+                </RelativeLayout>
+                <View
+                    style="@style/settingfgx"/>
+                <!--检测更新-->
+                    <RelativeLayout
+                        android:id="@+id/rl_jcgx"
+                        style="@style/settingLm">
+                        <TextView
+                            android:text="检测更新"
+                            style="@style/settingL" />
+                        <TextView
+                            android:layout_toLeftOf="@id/lv_gx_back"
+                            android:id="@+id/tv_bbh"
+                            style="@style/settingR"/>
+
+                        <ImageView
+                            android:id="@+id/lv_gx_back"
+                            style="@style/settingBack"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true" />
+                    </RelativeLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="25sp"
+                android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                android:id="@+id/tv_exit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="44dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:background="@drawable/shape_login"
+                android:elevation="1dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:text="安全退出"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

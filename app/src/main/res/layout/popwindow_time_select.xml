@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@drawable/around_conner_border"
+        android:layout_width="280dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:background="@drawable/code_bc"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <ImageView
+                android:id="@+id/lv_left"
+                android:layout_marginLeft="28dp"
+                android:layout_alignParentLeft="true"
+                android:src="@mipmap/ic_benifit_calendar_forward"
+                android:padding="5dp"
+                android:layout_width="30dp"
+                android:layout_centerVertical="true"
+                android:layout_height="30dp" />
+            <TextView
+                android:id="@+id/tv_year"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"
+                android:textSize="21sp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/lv_right"
+                android:layout_marginRight="28dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_benifit_calendar_back"
+                android:padding="5dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_month"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="22dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:layout_marginBottom="22dp"
+            android:orientation="horizontal"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_pop_quxiao"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/shuibo_btn_qx"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/font_h"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/tv_pop_qr"
+                android:layout_width="110dp"
+                android:layout_alignParentRight="true"
+                android:layout_height="35dp"
+                android:background="@drawable/shuibo_btn"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

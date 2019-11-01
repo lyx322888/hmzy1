@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/app_bar"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            app:elevation="0dp"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="vertical"
+                app:layout_scrollFlags="scroll|enterAlways|snap"
+                android:id="@+id/rl_titlebar"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/title_back"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:src="@drawable/list_back" />
+                <!--搜索框-->
+                <LinearLayout
+                    android:layout_marginRight="60dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_centerInParent="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:background="@drawable/edit_bc"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp">
+                    <ImageView
+                        android:layout_marginLeft="8dp"
+                        android:layout_width="32dp"
+                        android:padding="7dp"
+                        android:src="@drawable/list_search"
+                        android:layout_height="32dp"/>
+
+                    <EditText
+                        android:id="@+id/edit_search"
+                        android:layout_width="224dp"
+                        android:textCursorDrawable="@drawable/login_edittext_gb"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="搜索"
+                        android:imeOptions="actionSearch"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textColorHint="@color/edit_font"
+                        android:textSize="15sp" />
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/lv_switchover"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:src="@drawable/list_level" />
+            </RelativeLayout>
+        </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--筛选-->
+                <LinearLayout
+                    android:id="@+id/ll_sx"
+                    android:layout_width="match_parent"
+                    android:weightSum="4"
+                    android:background="@color/white"
+                    android:layout_height="44dp">
+                    <TextView
+                        android:id="@+id/tv_sx_item1"
+                        android:layout_width="0dp"
+                        android:text="综合"
+                        android:textColor="@color/font_h"
+                        android:layout_weight="1"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:id="@+id/tv_sx_item2"
+                        android:layout_width="0dp"
+                        android:text="销量"
+                        android:textColor="@color/font_h"
+                        android:layout_weight="1"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:layout_height="match_parent" />
+                    <LinearLayout
+                        android:id="@+id/ll_sx_item3"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/tv_sx_item3"
+                            android:layout_width="wrap_content"
+                            android:text="价格"
+                            android:textColor="@color/font_h"
+                            android:textSize="14sp"
+                            android:gravity="center"
+                            android:layout_height="match_parent" />
+                        <ImageView
+                            android:id="@+id/lv_sx_item3"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/list_normal"
+                            android:layout_width="7dp"
+                            android:layout_height="14dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/ll_sx_item4"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/tv_sx_item4"
+                            android:layout_width="wrap_content"
+                            android:text="筛选"
+                            android:textColor="@color/font_h"
+                            android:textSize="14sp"
+                            android:gravity="center"
+                            android:layout_height="match_parent" />
+                        <ImageView
+                            android:id="@+id/lv_sx_item4"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/list_singledown"
+                            android:layout_width="7dp"
+                            android:layout_height="14dp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <android.support.v7.widget.RecyclerView
+                    android:layout_marginTop="1dp"
+                    android:id="@+id/rv_sx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </android.support.v7.widget.RecyclerView>
+
+
+            </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <ImageView
+        android:id="@+id/lv_scrolltop"
+        android:layout_width="47dp"
+        app:layout_anchorGravity="bottom|end"
+        android:layout_gravity="end|bottom"
+        app:srcCompat="@mipmap/detail_top"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="12dp"
+        android:layout_height="47dp" />
+</android.support.design.widget.CoordinatorLayout>

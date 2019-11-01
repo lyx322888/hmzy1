@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:background="@color/white"
+    android:foreground="?android:attr/selectableItemBackgroundBorderless"
+    android:weightSum="5"
+    android:layout_height="80dp">
+    <LinearLayout
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/lv_share_left"
+            android:layout_width="44dp"
+            android:layout_height="44dp" />
+        <TextView
+            android:id="@+id/tv_share_item_title"
+            android:layout_marginLeft="12dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="15sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/share_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:gravity="right|center_vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_share_item_r"
+            android:layout_marginLeft="12dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="12sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/share_item_r"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginRight="12dp"
+            android:src="@drawable/bank_arrow"
+            android:layout_gravity="center_vertical"
+            android:layout_width="14dp"
+            android:layout_height="14dp" />
+    </LinearLayout>
+</LinearLayout>

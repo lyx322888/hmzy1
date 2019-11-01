@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.my.ResettradepwdActivity">
+    <include layout="@layout/comman_title"/>
+    <TextView
+        android:textSize="14sp"
+        android:id="@+id/forget_pwd_sms_hints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey_999999"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="10dp"
+        android:text="请获取验证码"/>
+    <LinearLayout
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textSize="15sp"
+            android:text="验证码:"
+            android:textColor="@color/font_h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp">
+            <EditText
+                android:id="@+id/binding_yzm"
+                android:layout_width="wrap_content"
+                android:minWidth="150dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:drawablePadding="12dp"
+                android:paddingLeft="12dp"
+                android:imeActionId="@+id/login"
+                android:imeOptions="actionDone"
+                android:maxLines="1"
+                android:maxLength="4"
+                android:textCursorDrawable="@drawable/login_edittext_gb"
+                android:inputType="number"
+                android:imeActionLabel="@string/action_login"
+                android:nextFocusForward="@+id/login_password"
+                android:hint="@string/binding_yzm"
+                android:textColorHint="@color/grey_999999"
+                android:textSize="14sp"
+                android:textColor="@color/comman_title"
+                android:background="@color/white"
+                tools:ignore="InvalidImeActionId" />
+            <TextView
+                android:id="@+id/tv_dx"
+                android:text="@string/tv_dx"
+                android:padding="6dp"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/details_gm"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:foreground="?android:attr/selectableItemBackgroundBorderless"
+        android:id="@+id/tvAffirm"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:background="@drawable/selector_btn"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:enabled="false"
+        android:textSize="16sp"
+        android:text="下一步"/>
+</LinearLayout>

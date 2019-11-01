@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:paddingLeft="23dp"
+        android:paddingRight="23dp"
+        android:paddingBottom="40dp"
+        android:paddingTop="40dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:background="@drawable/around_conner_border"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/tv_pop_content"
+            android:lineSpacingExtra="1dp"
+            android:lineSpacingMultiplier="1.4"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/font_h"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           />
+        <LinearLayout
+            android:layout_marginTop="23dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_pop_quxiao"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/shuibo_btn_qx"
+                android:gravity="center"
+                android:layout_marginRight="@dimen/dp_10"
+                android:text="取消"
+                android:textColor="@color/font_h"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/tv_pop_qr"
+                android:layout_width="110dp"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_height="40dp"
+                android:background="@drawable/shuibo_btn"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

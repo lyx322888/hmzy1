@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingLeft="13dp"
+    android:paddingRight="13dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:layout_height="wrap_content">
+        <com.huiminsheng.app.views.MyImagView_yuan
+            android:id="@+id/lv_tx"
+            android:layout_centerVertical="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:scaleType="centerInside" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="18dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/lv_tx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_centerVertical="true"
+                            android:id="@+id/tv_name"
+                            android:textSize="14sp"
+                            android:textColor="#FF1D1E1F"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ImageView
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/tv_name"
+                            android:id="@+id/lv_dj"
+                            android:layout_marginLeft="9dp"
+                            android:layout_width="wrap_content"
+                            android:scaleType="centerInside"
+                            android:layout_height="13dp" />
+                        <TextView
+                            android:id="@+id/tv_zjtj"
+                            android:layout_centerVertical="true"
+                            android:textSize="11sp"
+                            android:textColor="#FF1D1E1F"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:id="@+id/ll_phone"
+                            android:orientation="horizontal"
+                            android:layout_centerVertical="true"
+                            android:layout_width="wrap_content"
+                            android:gravity="center_vertical"
+                            android:layout_height="wrap_content">
+                                <TextView
+                                    android:id="@+id/tv_phone"
+                                    android:textSize="14sp"
+                                    android:textColor="#FFA3A3A3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                                <ImageView
+                                    android:src="@mipmap/team_phone"
+                                    android:id="@+id/lv_phone"
+                                    android:layout_marginLeft="9dp"
+                                    android:layout_width="18dp"
+                                    android:scaleType="centerInside"
+                                    android:layout_height="18dp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_jjtj"
+                            android:layout_centerVertical="true"
+                            android:textSize="11sp"
+                            android:textColor="#FF1D1E1F"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                </RelativeLayout>
+        </LinearLayout>
+</RelativeLayout>
